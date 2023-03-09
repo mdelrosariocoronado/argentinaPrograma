@@ -1,0 +1,13 @@
+:root{
+    --main-fbrown: #1B1817;
+    --main-fgreen: #779373;
+    --main-fbeige: #E8DFC9;
+    --main-flightbrown: #6D5C52;
+    --main-fpink: #FF598B;
+}
+
+header{ 
+    background-color: var(--main-fbeige) ;
+    color: var(--main-fbrown) ;
+    font-family: src('front-end/src/assets/fonts/BarlowCondensed-SemiBold.ttf') ;
+}
