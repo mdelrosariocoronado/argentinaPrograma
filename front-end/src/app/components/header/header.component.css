@@ -6,8 +6,15 @@
     --main-fpink: #FF598B;
 }
 
-header{ 
+#header{ 
     background-color: var(--main-fbeige) ;
     color: var(--main-fbrown) ;
     font-family: src('front-end/src/assets/fonts/BarlowCondensed-SemiBold.ttf') ;
 }
+
+
+header #btn {
+    color: var(--main-fbrown);
+    background: var(--main-fpink);
+ }
+

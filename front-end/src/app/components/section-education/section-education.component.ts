@@ -6,5 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./section-education.component.css']
 })
 export class SectionEducationComponent {
-
+  certification = "TITULO DE TECNICA EN PROGRAMACION";
+  certificationYear = 2022;
+  institution =  "EES Tecnica N°3 Nikola Tesla";
+  location = "Necochea";
 }

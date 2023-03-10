@@ -10,6 +10,9 @@ import { SectionEducationComponent } from './components/section-education/sectio
 import { SectionExperienceComponent } from './components/section-experience/section-experience.component';
 import { SectionProjectsComponent } from './components/section-projects/section-projects.component';
 import { SectionSkillsComponent } from './components/section-skills/section-skills.component';
+import { LogInComponent } from './components/log-in/log-in.component';
+import { HomeComponent } from './components/home/home.component';
+import { ModifyViewComponent } from './components/modify-view/modify-view.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +23,10 @@ import { SectionSkillsComponent } from './components/section-skills/section-skil
     SectionEducationComponent,
     SectionExperienceComponent,
     SectionProjectsComponent,
-    SectionSkillsComponent
+    SectionSkillsComponent,
+    LogInComponent,
+    HomeComponent,
+    ModifyViewComponent
   ],
   imports: [
     BrowserModule,
