@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NgCircleProgressModule } from 'ng-circle-progress';
 
 @Component({
   selector: 'app-section-skills',

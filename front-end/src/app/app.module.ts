@@ -12,7 +12,7 @@ import { SectionProjectsComponent } from './components/section-projects/section-
 import { SectionSkillsComponent } from './components/section-skills/section-skills.component';
 import { LogInComponent } from './components/log-in/log-in.component';
 import { HomeComponent } from './components/home/home.component';
-import { ModifyViewComponent } from './components/modify-view/modify-view.component';
+import { NgCircleProgressModule } from 'ng-circle-progress';
 
 @NgModule({
   declarations: [
@@ -25,12 +25,12 @@ import { ModifyViewComponent } from './components/modify-view/modify-view.compon
     SectionProjectsComponent,
     SectionSkillsComponent,
     LogInComponent,
-    HomeComponent,
-    ModifyViewComponent
+    HomeComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule, 
+    NgCircleProgressModule.forRoot({})
   ],
   providers: [],
   bootstrap: [AppComponent]

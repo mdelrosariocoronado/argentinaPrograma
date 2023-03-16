@@ -1,16 +1,18 @@
-<section class="info container ">
-    <div class="container d-flex justify-content-center align-items-center text-center">
-        <div class="image-info-container flex-column align-items-center justify-content-center w-auto">
-           <img class="profile-image w-50 h-auto" src=" ../../../../../assets/images/profileImage.png" alt="imagen de perfil">
+<section class=" ">
+    <app-section-banner></app-section-banner>
+    <div class="position-relative  container d-flex justify-content-center align-items-center text-center ">
+        <div class="image-info-container position-absolute end-50 bottom-25 flex-column align-items-center justify-content-center w-50 ">
+           <img class=" profile-image w-50 h-auto" src=" ../../../../../assets/images/profileImage.png" alt="imagen de perfil">
            <p> {{birthdate}} </p>
            <p> {{location}} </p>
         </div>
-        <h3 class="mr-2">{{name}} {{lastname}} </h3>
-        <h6 class="py-2 px-4 ">{{speciality}} </h6>
     </div>
+    <div class="image-info-container container-fluid text-end w-50 mt-5">
+        <h3 class="ml-5 mr-2">{{name}} {{lastname}} </h3>
+        <h6 class="py-2 px-4  ">{{speciality}} </h6>
+    </div>
+        
     <div class="highlight-info flex-column ">
         <p> {{aboutMe}} </p>
-       
     </div>
-    
 </section>
