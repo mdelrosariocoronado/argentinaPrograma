@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+    
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>org.springframework.boot</groupId>
@@ -13,10 +14,24 @@
 	<version>0.0.1-SNAPSHOT</version>
 	<name>portfolio</name>
 	<description>Demo project for Spring Boot</description>
-	<properties>
-		<java.version>17</java.version>
+        <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+            <maven.compiler.source>19</maven.compiler.source>
+            <maven.compiler.target>19</maven.compiler.target>
+            <exec.mainClass>com.argentinaPrograma.portfolio.PortfolioApplication</exec.mainClass>
+            <java.version>17</java.version>
 	</properties>
 	<dependencies>
+            <!-- https://mvnrepository.com/artifact/org.codehaus.mojo/exec-maven-plugin -->
+                <dependency>
+                    <groupId>org.codehaus.mojo</groupId>
+                    <artifactId>exec-maven-plugin</artifactId>
+                    <version>3.0.0</version>
+                </dependency>
+                <dependency>
+                  <groupId>org.springframework.data</groupId>
+                  <artifactId>spring-data-jpa</artifactId>
+                </dependency>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-data-jpa</artifactId>
@@ -51,11 +66,47 @@
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+                <dependency>
+                    <groupId>javax.persistence</groupId>
+                    <artifactId>persistence-api</artifactId>
+                    <version>1.0.2</version>
+                </dependency>
+	 <dependency>
+	  <groupId>com.h2database</groupId>
+	  <artifactId>h2</artifactId>
+	  <version>2.1.214</version>
+	  <type>pom.sha512</type>
+	 </dependency>
+	 <dependency>
+	  <groupId>org.springframework.data</groupId>
+	  <artifactId>spring-data-jpa</artifactId>
+	  <version>3.0.3</version>
+	 </dependency>
+	 <dependency>
+	  <groupId>com.ejemplo</groupId>
+	  <artifactId>SpringBoot</artifactId>
+	  <version>0.0.1-SNAPSHOT</version>
+	 </dependency>
+	 <dependency>
+	  <groupId>org.springframework.boot</groupId>
+	  <artifactId>spring-boot</artifactId>
+	  <version>3.0.4</version>
+	 </dependency>
+	 <dependency>
+	  <groupId>jakarta.persistence</groupId>
+	  <artifactId>jakarta.persistence-api</artifactId>
+	  <version>3.1.0</version>
+	  <type>jar</type>
+	 </dependency>
 	</dependencies>
 
 	<build>
 		<plugins>
-                    
+                    <plugin>
+                      <groupId>org.apache.maven.plugins</groupId>
+                      <artifactId>maven-surefire-plugin</artifactId>
+                      <version>2.19.1</version>
+                    </plugin>
                     <plugin>
                         <groupId>org.apache.maven.plugins</groupId>
                         <artifactId>maven-compiler-plugin</artifactId>
